@@ -70,6 +70,7 @@ const addNewAdmin = catchAsyncErrors(async(req, res, next) => {
   });
 });
 
+
 const getAllDoctors = catchAsyncErrors(async(req, res, next) => {
   const  doctors = await userModel.find({role: "Doctor" });
   res.status(200).json({
