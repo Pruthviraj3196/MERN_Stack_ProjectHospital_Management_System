@@ -2,7 +2,7 @@
 A comprehensive Hospital Management System designed to streamline and manage hospital operations efficiently. This project includes features like patient management, appointment booking, user authentication, and an admin dashboard for managing hospital staff and resources.
 
 ## Hosted Links 
-### Main page - https://nodejs-1-kek3.onrender.com/
+### Main page - https://mern-stack-projecthospital-management-xh47.onrender.com/login
 ### Admin Page - https://nodejs-2-c4z2.onrender.com/login
 
 ## Features 🚀
