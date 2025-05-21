@@ -6,16 +6,18 @@
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   background: #e5e5e5;
 }
+
 .btn {
-  padding: 7px 20px;
-  border-radius: 12px;
-  border: none;
+  padding: 5px 14px;
+  border-radius: 10px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1.4px;
 }
+
 .white-btn {
   background: #fff;
   color: #111;
@@ -24,59 +26,54 @@ body {
   background: #9083d5;
   color: #fff;
 }
+
 p,
 span,
 a {
-  font-size: 20px;
+  font-size: 16px;
 }
 h1 {
-  font-size: 36px;
-  font-weight: 900;
-}
-h1 {
-  font-size: 36px;
-  font-weight: 900;
-}
-h2 {
-  font-size: 32px;
-  font-weight: 900;
-}
-h3 {
   font-size: 28px;
   font-weight: 900;
 }
+h2 {
+  font-size: 26px;
+  font-weight: 900;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 900;
+}
 h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
 }
 h5,
 h6 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
 @media (max-width: 1186px) {
   h1 {
-    font-size: 32px;
-    font-weight: 900;
+    font-size: 26px;
   }
   h2 {
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 24px;
   }
 }
 .container {
-  padding: 0 100px;
+  padding: 0 60px;
 }
 @media (max-width: 700px) {
   .container {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 }
 .hero {
   display: flex;
-  gap: 50px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  gap: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   position: relative;
 }
 .hero .banner {
@@ -84,28 +81,28 @@ h6 {
 }
 .hero .banner h1,
 .hero .banner p {
-  max-width: 650px;
+  max-width: 450px;
 }
 .hero .banner h1 {
-  letter-spacing: 2px;
-  word-spacing: 5px;
-  font-size: 40px;
+  letter-spacing: 1.4px;
+  word-spacing: 3px;
+  font-size: 28px;
 }
 .hero .banner p {
   color: #111;
-  letter-spacing: 2px;
+  letter-spacing: 1.4px;
 }
 .hero .banner span {
   position: absolute;
-  right: -300px;
-  top: -200px;
+  right: -180px;
+  top: -120px;
   z-index: -1;
 }
 .hero .banner:first-child {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
 .hero .banner:last-child {
   display: flex;
@@ -122,21 +119,21 @@ h6 {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(20px);
+    transform: translateY(12px);
   }
 }
 @media (max-width: 1186px) {
   .hero .banner span {
-    right: -400px;
+    right: -240px;
   }
   .hero .banner h1 {
-    font-size: 32px;
+    font-size: 26px;
   }
 }
 @media (max-width: 1085px) {
   .hero .banner span {
-    right: -480px;
-    top: -315px;
+    right: -280px;
+    top: -190px;
   }
 }
 @media (max-width: 925px) {
@@ -145,61 +142,66 @@ h6 {
   }
   @media (max-width: 700px) {
     .hero {
-      padding-bottom: 40px;
+      padding-bottom: 30px;
     }
   }
 }
+
+
 .form-component {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 .form-component h2 {
   color: gray;
-  letter-spacing: 4px;
-  margin-bottom: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-size: 22px;
 }
 .form-component h4 {
   color: gray;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 .form-component p {
-  max-width: 750px;
+  max-width: 500px;
   color: gray;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 .form-component form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 .form-component form div {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 .form-component form input,
 .form-component form select,
 .form-component form textarea {
   flex: 1;
-  font-size: 24px;
-  padding: 10px 10px 10px 40px;
-  border-radius: 7px;
+  font-size: 18px;
+  padding: 8px 8px 8px 30px;
+  border-radius: 6px;
   border: 1px solid gray;
 }
 .form-component button {
-  padding: 10px 35px;
+  padding: 8px 25px;
   color: #fff;
   font-weight: 700;
   width: fit-content;
   border: none;
-  border-radius: 8px;
-  font-size: 24px;
-  margin-bottom: 30px;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-bottom: 20px;
   background: linear-gradient(140deg, #9083d5, #271776ca);
 }
 .form-component .wrapper {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 .form-component .wrapper .banner {
   flex: 1;
@@ -210,35 +212,34 @@ h6 {
   align-items: center;
 }
 .form-component .wrapper .banner:last-child img {
-  max-width: 450px;
+  max-width: 300px;
 }
+
 .login-form {
-  margin: 100px auto 20px auto;
-  max-width: 800px;
+  margin: 70px auto 15px auto;
+  max-width: 600px;
   text-align: center;
 }
 .register-form {
-  max-width: 1200px;
-  margin: 100px auto 20px auto;
+  max-width: 900px;
+  margin: 70px auto 15px auto;
 }
-.login-form h2 {
-  color: #000;
-}
+.login-form h2,
 .register-form h2 {
   color: #000;
+  font-size: 24px;
 }
+
 @media (max-width: 1110px) {
-  .appointment-form form div:nth-child(4) {
-    flex-direction: column;
-  }
+  .appointment-form form div:nth-child(4),
   .appointment-form form div:nth-child(5) {
     flex-direction: column;
   }
 }
 @media (max-width: 888px) {
   .form-component {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .form-component form div {
     flex-direction: column;
@@ -248,15 +249,15 @@ h6 {
   .form-component form input,
   .form-component form select,
   .form-component form textarea {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px;
   }
 }
 .biography {
   display: flex;
-  gap: 50px;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 .biography .banner:first-child {
   flex: 1;
@@ -268,52 +269,56 @@ h6 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 .biography .banner h3 {
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 .biography .banner p:first-child {
-  font-size: 24px;
-  letter-spacing: 2px;
+  font-size: 20px;
+  letter-spacing: 1.4px;
 }
 @media (max-width: 925px) {
   .biography {
     flex-direction: column-reverse;
   }
 }
+
 .message-form {
   position: relative;
 }
 .message-form h2 {
   text-align: center;
   color: #000;
+  font-size: 24px;
   position: relative;
 }
 .message-form img {
   position: absolute;
   top: 0;
   right: -16%;
-  height: 600px;
+  height: 400px;
   z-index: -1;
 }
+
 @media (max-width: 700px) {
   .message-form img {
     right: -35%;
-    height: 450px;
+    height: 300px;
     top: 10%;
   }
 }
 footer {
-  padding-bottom: 30px !important;
+  padding-bottom: 20px !important;
 }
 footer hr {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 footer .content {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 footer .content div {
   flex: 1;
@@ -323,16 +328,18 @@ footer .content div:nth-child(3) {
 }
 footer .content div h4 {
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 footer .content div ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 footer .content div ul a {
   color: gray;
   text-decoration: none;
+  font-size: 16px;
 }
 footer .content div ul a:hover {
   color: #8570ed;
@@ -340,20 +347,21 @@ footer .content div ul a:hover {
 }
 footer .content div ul li span {
   color: gray;
+  font-size: 16px;
 }
 footer .content div ul li span:first-child {
-  width: 150px;
+  width: 120px;
   display: inline-block;
 }
 
 footer .content div:last-child div {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 footer .content div:last-child div svg {
-  font-size: 24px;
+  font-size: 18px;
 }
 @media (max-width: 1135px) {
   footer .content {
@@ -363,8 +371,8 @@ footer .content div:last-child div svg {
   footer .content div,
   footer .content div:nth-child(3) {
     flex: none;
-    width: 340px;
-    margin-bottom: 30px;
+    width: 280px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 900px) {
@@ -384,12 +392,13 @@ footer .content div:last-child div svg {
 }
 
 .departments {
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 .departments h2 {
   color: gray;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 22px;
 }
 .card {
   position: relative;
@@ -398,11 +407,11 @@ footer .content div:last-child div svg {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 20px;
-  min-height: 360px;
-  margin: 0 10px;
+  padding-bottom: 10px;
+  padding-left: 7px;
+  padding-right: 15px;
+  min-height: 280px;
+  margin: 0 7px;
   text-decoration: none;
 }
 .card img {
@@ -414,15 +423,15 @@ footer .content div:last-child div svg {
   left: 0;
 }
 .card .depart-name {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background: #e5e5e5;
-  width: 320px;
-  font-size: 24px;
+  width: 240px;
+  font-size: 18px;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
-  padding: 12px;
-  border-radius: 30px;
+  padding: 8px;
+  border-radius: 24px;
   left: 0;
   height: fit-content;
   font-weight: 700;
@@ -438,15 +447,15 @@ nav {
   align-items: center;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
   z-index: 2;
 }
 nav .logo {
   flex: 1;
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 nav .navLinks {
   flex: 2;
@@ -458,14 +467,14 @@ nav .navLinks {
 }
 nav .navLinks .links {
   display: flex;
-  gap: 25px;
+  gap: 18px;
 }
 nav .navLinks .links a {
   text-decoration: none;
   color: #222;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 1.4px;
+  letter-spacing: 1px;
 }
 nav .navLinks .links a:hover {
   color: #000;
@@ -473,12 +482,12 @@ nav .navLinks .links a:hover {
   cursor: pointer;
 }
 nav .btn {
-  padding: 8px 20px;
+  padding: 6px 15px;
   color: #e5e5e5;
   background: transparent;
   border: none;
-  border-radius: 20px;
-  font-size: 20px;
+  border-radius: 16px;
+  font-size: 16px;
   font-weight: 600;
   z-index: 2;
 }
@@ -492,12 +501,12 @@ nav .hamburger {
   display: none;
 }
 nav svg {
-  font-size: 1.75rem;
+  font-size: 1.2rem;
 }
 @media (max-width: 1520px) {
   nav {
     min-width: 100%;
-    padding: 25px 20px 40px 20px;
+    padding: 20px 15px 30px 15px;
   }
 }
 @media (max-width: 1100px) {
@@ -514,13 +523,13 @@ nav svg {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 15px 7.5px;
+    padding: 10px 5px;
     z-index: 2;
     transition: 0.3s;
     position: fixed;
     left: 0;
     height: 100%;
-    width: 400px;
+    width: 320px;
     background: #ffffffbf;
     top: 79px;
   }
@@ -528,12 +537,12 @@ nav svg {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 15px 7.5px;
+    padding: 10px 5px;
     z-index: 2;
     transition: 0.3s;
     position: fixed;
     left: -100%;
-    width: 400px;
+    width: 320px;
     height: 100%;
     background: #ffffffbf;
     top: 79px;
@@ -546,12 +555,12 @@ nav svg {
     font-weight: 700;
   }
   nav .logoutBtn {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 800px) {
   nav .showmenu {
-    width: 96vw;
+    width: 90vw;
   }
 }
 @media (max-width: 650px) {
@@ -574,16 +583,16 @@ nav svg {
 input[type="date"]:before {
   content: attr(placeholder);
   color: #444;
-  margin-right: 0.5em;
+  margin-right: 0.4em;
 }
 input[type="time"]:before {
   content: attr(placeholder);
   color: #444;
-  margin-right: 0.5em;
+  margin-right: 0.4em;
 }
-.logo-img{
-  width: 150px;
+.logo-img {
+  width: 110px;
 }
-footer .logo-img{
+footer .logo-img {
   width: 100%;
 }

@@ -11,19 +11,17 @@ import "react-toastify/dist/ReactToastify.css";
 import Navbar from './components/Navbar';
 import { Context } from './main';
 import Footer from './components/Footer';
+import axios from 'axios'; // ✅ Make sure axios is imported
 
 const App = () => {
-  const {isAuthenticated, setIsAuthenticated, setUser} = useContext(Context);
+  const { setIsAuthenticated, setUser } = useContext(Context);
 
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get(
-          "/api/v1/user/patient/me",
-          {
-            withCredentials: true,
-          }
-        );
+        const response = await axios.get("/api/v1/user/patient/me", {
+          withCredentials: true,
+        });
         setIsAuthenticated(true);
         setUser(response.data.user);
       } catch (error) {
@@ -31,25 +29,24 @@ const App = () => {
         setUser({});
       }
     };
-    fetchUser();
-  }, [isAuthenticated]);
+
+    fetchUser(); // ✅ Call once on mount
+  }, []);
 
   return (
-    <>
-     <Router>
-      <Navbar/>
-       <Routes>
+    <Router>
+      <Navbar />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-       </Routes>
-       <ToastContainer position='top-center' /> 
-       <Footer/>
-     </Router>
-    </>
-  )
-}
+      </Routes>
+      <ToastContainer position='top-center' />
+      <Footer />
+    </Router>
+  );
+};
 
-export default App
+export default App;
