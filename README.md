@@ -3,7 +3,7 @@ A comprehensive Hospital Management System designed to streamline and manage hos
 
 ## Hosted Links 
 ### Main page - https://mern-stack-projecthospital-management-xh47.onrender.com/login
-### Admin Page - https://nodejs-2-c4z2.onrender.com/login
+### Admin Page - https://mern-stack-projecthospital-management-4otf.onrender.com/login
 
 ## Features 🚀
 ## General:
